@@ -1,0 +1,168 @@
+{% load static %}
+<footer class="ftco-footer">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-sm-12 col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2 logo website-logo">
+            <a class="navbar-brand website-logo" href="{% url 'home' %}">
+              <img class="logo-img logo-En" src="{% static 'images/logoEn.webp' %}" width="180px" height="60px" alt="logo" data-lng="En">    
+              <img class="logo-img logo-Ar" src="{% static 'images/logoAr.webp' %}" width="180px" height="60px" alt="logo" data-lng="Ar">        
+            </a>
+          </h2>
+
+          <p data-i18n="footerPara16" class="footerparag">
+            the Juhany Law Firm is one of the largest full-fledged commercial
+            law firms in Egypt and the Middle East. It was established in 1997.
+            Our goal is to provide our clients with outstanding quality services
+            and innovative legal solutions in the fields of individuals,
+            companies and registrations.
+          </p>
+          <ul class="ftco-footer-social list-unstyled mt-2">
+            <li class="ftco-animate">
+              <a href="https://www.facebook.com/ahmed.foad.754"
+                ><span class="fa fa-facebook"></span
+              ></a>
+            </li>
+            <li class="ftco-animate">
+              <a href="https://www.youtube.com/@ahmedfoad500"
+                ><span class="fa fa-youtube"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md">
+        <div class="ftco-footer-widget mb-4 ml-md-4">
+          <h2 class="ftco-heading-2" data-i18n="footerHeading4">Explore</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a href="{% url 'services' %}" data-i18n="footerPara14"
+                ><span class="fa fa-chevron-right mr-2"></span>Practice Areas</a
+              >
+            </li>
+            <li>
+              <a href="{% url 'services' %}" data-i18n="services"
+                ><span class="fa fa-chevron-right mr-2"></span> Services</a
+              >
+            </li>
+            <!-- <li>
+          <a href="team.html" data-i18n="footerPara15"><span class="fa fa-chevron-right mr-2"></span>Team</a>
+          </li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2" data-i18n="footerHeading2">Company</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a href="{% url 'about' %}" data-i18n="footerPara4"
+                ><span class="fa fa-chevron-right mr-2"></span>About Us</a
+              >
+            </li>
+            <li>
+              <a href="{% url 'blog' %}" data-i18n="footerPara5"
+                ><span class="fa fa-chevron-right mr-2"></span>Blog</a
+              >
+            </li>
+            <li>
+              <a href="{% url 'contact' %}" data-i18n="footerPara6"
+                ><span class="fa fa-chevron-right mr-2"></span>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2" data-i18n="footerHeading1">
+            Have a Questions?
+          </h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li>
+                <span class="icon fa fa-map marker"></span
+                ><span class="text" data-i18n="footerPara1"
+                  >7 Al-Ahram Street, Al-Korba, Heliopolis - second floor
+                </span>
+              </li>
+              <li>
+                <a href="https://wa.me/+201001647862"
+                  ><span class="icon fa fa-phone"></span
+                  ><span class="text" data-i18n="footerPara2"
+                    >201001647862+</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon fa fa-phone"></span
+                  ><span class="text" data-i18n="footerPara165"
+                    >02 24147400</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="mailto:Afg.economics7@gmail.com"
+                  ><span class="icon fa fa-paper-plane pr-4"></span
+                  ><span class="text" data-i18n="footerPara3"
+                    >Afg.economics7@gmail.com</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid px-0 py-5 bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="mb-0" style="color: rgba(255, 255, 255, 0.5)">
+            <span data-i18n="footerCopyright"
+              >Copyright &copy; 2023 All rights reserved
+            </span>
+            <i class="fa fa-heart color-danger" aria-hidden="true"></i>
+            <a href="https://wa.me/+201025376604">YoussefAshraf</a> |
+            <a href="https://wa.me/+201009305238">Hazem</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+  <svg class="circular" width="48px" height="48px">
+    <circle
+      class="path-bg"
+      cx="24"
+      cy="24"
+      r="22"
+      fill="none"
+      stroke-width="4"
+      stroke="#eeeeee"
+    />
+    <circle
+      class="path"
+      cx="24"
+      cy="24"
+      r="22"
+      fill="none"
+      stroke-width="4"
+      stroke-miterlimit="10"
+      stroke="#F96D00"
+    />
+  </svg>
+</div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+  ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+    <path
+      d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+    /></svg
+></a>

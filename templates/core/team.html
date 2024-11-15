@@ -1,0 +1,83 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section class="ftco-section">
+  <div class="container">
+    <div class="row">
+      <!--<div class="col-lg-3 ftco-animate">-->
+      <!--  <div class="staff">-->
+      <!--    <div class="img-wrap d-flex align-items-stretch">-->
+      <!--      <div class="img align-self-stretch" style="-->
+      <!--        background-image: url('{%static 'images/5c2a49b0-b2c8-45ea-8689-7739fb2fa832.webp'%}');"-->
+      <!--        "></div>-->
+      <!--    </div>-->
+      <!--    <div class="text pt-3 text-center">-->
+      <!--      <h3 data-i18n="ourTeamHeading2">Ahmmed El Juhany</h3>-->
+      <!--      <span class="position mb-2" data-i18n="ourTeamPara1"> Lawyer</span>-->
+      <!--      <div class="faded">-->
+      <!--        <p data-i18n="ourTeamFooter1">-->
+      <!--          Al-Juhani Foundation is an institution and a prestigious legal-->
+      <!--          entity founded by lawyer Ahmed Fouad Al-Juhani Al-Juhani Lawyers-->
+      <!--          Foundation aims to provide distinguished legal services-->
+      <!--        </p>-->
+      <!--        <ul class="ftco-social text-center">-->
+      <!--          <li class="ftco-animate">-->
+      <!--            <a-->
+      <!--              href="https://www.facebook.com/ahmed.foad.754"-->
+      <!--              class="d-flex align-items-center justify-content-center"-->
+      <!--              ><span class="fa fa-facebook"></span-->
+      <!--            ></a>-->
+      <!--          </li>-->
+
+      <!--          <li class="ftco-animate">-->
+      <!--            <a-->
+      <!--              href="https://www.youtube.com/@ahmedfoad500"-->
+      <!--              class="d-flex align-items-center justify-content-center"-->
+      <!--              ><span class="fa fa-youtube"></span-->
+      <!--            ></a>-->
+      <!--          </li>-->
+      <!--        </ul>-->
+      <!--      </div>-->
+      <!--    </div>-->
+      <!--  </div>-->
+      <!--</div>-->
+      {% for member in team %}
+      <div class="col-lg-3 ftco-animate">
+        <div class="staff">
+          <div class="img-wrap d-flex align-items-stretch">
+            <div class="img align-self-stretch" style="
+              background-image: url('{{member.image.url}}');"
+              "></div>
+          </div>
+          <div class="text pt-3 text-center">
+            <h3>{{member.name}}</h3>
+            <span class="position mb-2"> {{member.title}}</span>
+            <div class="faded">
+              <p>
+                {{member.description}}
+              </p>
+              <ul class="ftco-social text-center">
+                <li class="ftco-animate">
+                  <a
+                    href="{{member.facebook}}"
+                    class="d-flex align-items-center justify-content-center"
+                    ><span class="fa fa-facebook"></span
+                  ></a>
+                </li>
+
+                <li class="ftco-animate">
+                  <a
+                    href="{{member.youtube}}"
+                    class="d-flex align-items-center justify-content-center"
+                    ><span class="fa fa-youtube"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

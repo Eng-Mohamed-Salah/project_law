@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section
+      class="hero-wrap hero-wrap-2"
+      style="
+        background-image: url('{%static 'images/justice-and-law-concept-male-judge-in-a-courtroom-on-wooden-table-and-counselor-or-male-lawyer-working-in-office-legal-law-advice-and-justice-concept-free-video.webp'%}');
+      "
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="overlay"></div>
+  
+
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate mb-5 text-center">
+            <p class="breadcrumbs mb-0">
+              <span class="mr-2"><a href="{% url 'home' %}" data-i18n="home">Home </a> </span>
+  
+              <i class="fa fa-chevron-left"></i> <span data-i18n="Contact"> Contact</span>
+            </p>
+            <h1 class="mb-0 bread" data-i18n="contactUs">Contact Us</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+           <div class='sucess-overlay'></div>
+      <div class="message-success">
+        <div class="check">&#10004;</div>
+        <p data-i18n="Success">Success</p>
+        <p data-i18n="successful">
+          Thanks For your Message. We'll see you soon!
+        </p>
+        <button id="ok" data-i18n="ok">OK</button>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="wrapper px-md-4">
+              <div class="row mb-5">
+                <div class="col-md-3">
+                  <div class="dbox w-100 text-center">
+                    <div
+                      class="icon d-flex align-items-center justify-content-center"
+                    >
+                      <span class="fa fa-map-marker"></span>
+                    </div>
+                    <div class="text">
+                      <p>
+                        <span data-i18n="address">Address:</span>  <small data-i18n="footerPara1">7 Al-Ahram Street, Al-Korba, Heliopolis - second floor</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="dbox w-100 text-center">
+                    <div
+                      class="icon d-flex align-items-center justify-content-center"
+                    >
+                      <span class="fa fa-phone"></span>
+                    </div>
+                    <div class="text">
+                      <p>
+                        <span data-i18n="phone">Phone:</span>
+                        <a href="#" data-i18n="footerPara2">+201001647862</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="dbox w-100 text-center">
+                    <div
+                      class="icon d-flex align-items-center justify-content-center"
+                    >
+                      <span class="fa fa-paper-plane"></span>
+                    </div>
+                    <div class="text">
+                      <p>
+                        <span data-i18n="email">Email:</span>
+                        <a href="mailto:info@yoursite.com">Afg.economics7@gmail.com</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="dbox w-100 text-center">
+                    <div
+                      class="icon d-flex align-items-center justify-content-center"
+                    >
+                      <span class="fa fa-globe"></span>
+                    </div>
+                    <div class="text">
+                      <p>
+                        <span data-i18n="website">Website</span>
+                        <a href="#">https://juhany-lawfirm.com/</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-md-7">
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+                    <h3 class="mb-4" data-i18n="contactUs">Contact Us</h3>
+                    <form
+                      method="POST"
+                      id="targetForm"
+                      name="contactForm"
+                      class="contactForm"
+                      action="{% url 'contact_form' %}" 
+                    >
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="name">Full Name</label>
+                            <input
+                              type="text"
+                              class="form-control input-Law"
+                              name="name"
+                              id="name-input"
+                              required
+                              data-i18n="name"
+                              placeholder="Full Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="email"
+                              >Email Address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control input-Law"
+                              data-i18n="email"
+                              name="email"
+                              required
+                              id="email-input"
+                              placeholder="email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="subject">Subject</label>
+                            <input
+                              type="text"
+                              class="form-control input-Law"
+                              name="subject"
+                              id="subject"
+                              data-i18n="subject"
+                              placeholder="subject"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="#">Message</label>
+                            <textarea
+                              name="message"
+                              class="form-control input-Law"
+                              data-i18n="message"
+                              id="message-input"
+                              cols="30"
+                              rows="4"
+                              placeholder="Message"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            {% csrf_token %}
+                            <input
+                              type="submit"
+                              value="Send Message"
+                              class="btn btn-primary input-Law2"
+                              data-i18n="send"
+                              
+                            />
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-5 order-md-first d-flex align-items-stretch">
+                  <div id="map" class="map"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

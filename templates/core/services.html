@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section
+      class="hero-wrap hero-wrap-2"
+  style="
+        background-image: url('{%static 'images/justice-and-law-concept-male-judge-in-a-courtroom-on-wooden-table-and-counselor-or-male-lawyer-working-in-office-legal-law-advice-and-justice-concept-free-video.webp'%}');"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="overlay"></div>
+
+      <div class="container">
+        <div
+          class="row no-gutters slider-text align-items-end justify-content-center"
+        >
+          <div class="col-md-9 ftco-animate mb-5 text-center">
+            <p class="breadcrumbs mb-0">
+              <span class="mr-2"
+                ><a href="{% url 'home' %}" data-i18n="home">Home </a>
+              </span>
+
+              <i class="fa fa-chevron-left"></i>
+              <span data-i18n="services"> Practice Areas </span>
+            </p>
+            <h1 class="mb-0 bread" data-i18n="services">Services</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% include 'includes/services_section.html' %}
+    <section
+      class="ftco-appointment ftco-section img"
+      style="background-image: url({%static 'images/bg_2.webp'%})"
+    >
+               <div class='sucess-overlay'></div>
+    <div class="message-success">
+      <div class="check">&#10004;</div>
+      <p data-i18n="Success">Success</p>
+      <p data-i18n="successful">
+        Thanks For your Message. We'll see you soon!
+      </p>
+      <button id="ok" data-i18n="ok">OK</button>
+    </div>
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 pr-md-5">
+            <div class="heading-section heading-section-white">
+              <h2 class="mb-3" data-i18n="contactHeading">
+                We Welcome All Your Questions
+              </h2>
+              <p data-i18n="contactp">
+                You can also contact us via the contact form on our website. We
+                believe in the confidentiality and reliability of all
+                information we receive from you. Be sure to provide all the
+                required information in the contact form to ensure a response
+                from us.
+              </p>
+              <div class="row mt-md-4">
+                <div class="col-lg-6">
+                  <div class="services d-flex w-100">
+                    <div
+                      class="icon icon-2 d-flex align-items-center justify-content-center"
+                    >
+                      <span class="flaticon-medal"></span>
+                    </div>
+                    <div class="text pl-3">
+                      <h2 data-i18n="contactSubHeading1">Certificate</h2>
+                      <p data-i18n="contactSubP1">
+                        He has obtained academic degrees in various
+                        specializations according to local law, as well as a
+                        variety of international death laws
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="services d-flex w-100">
+                    <div
+                      class="icon icon-2 d-flex align-items-center justify-content-center"
+                    >
+                      <span class="flaticon-auction"></span>
+                    </div>
+                    <div class="text pl-3">
+                      <h2 data-i18n="contactSubHeading2">
+                        27 Years Of Experience
+                      </h2>
+                      <p data-i18n="contactSubP2">
+                        Providing the best lawyer strategy to enhance its
+                        ability to solve legal problems with the lowest time and
+                        cost.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="services d-flex w-100">
+                    <div
+                      class="icon icon-2 d-flex align-items-center justify-content-center"
+                    >
+                      <span class="flaticon-lawyer"></span>
+                    </div>
+                    <div class="text pl-3">
+                      <h2 data-i18n="contactSubHeading3">
+                        Best Attorneys Team
+                      </h2>
+                      <p data-i18n="contactSubP3">
+                        We Have The Strongest Lawyers To Defend You And Provide
+                        Legal Protection For You And Your Property.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 half ftco-animate">
+            <h2 class="mb-4" data-i18n="formHeading1">
+              Submit Your Legal Problem
+            </h2>
+            <form method="POST" action="{% url 'contact_form' %}" class="appointment" id="targetForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control input-Law" id="name-input" required data-i18n="name" placeholder="Your Name" name="name" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group"> 
+                    <input type="text" class="form-control input-Law" id="email-input" required data-i18n="email" placeholder="Email" name="email" />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="form-field">
+                      <div class="select-wrap">
+                        <div class="icon">
+                          <span class="fa fa-chevron-down"></span>
+                        </div>
+                        <select name="service" id="" class="form-control">
+                          <option value="مجالات الممارسه", data-i18n="lawServies1">
+                            Practice Areas
+                          </option>
+                          <option value="تأسيس الشركات" data-i18n="lawServies2">
+                            Incorporation of companies
+                          </option>
+                          <option value="التراخيص" data-i18n="lawServies3">
+                            Licenses
+                          </option>
+                          <option value="تحصيل الديون" data-i18n="lawServies4">
+                            Debt collection
+                          </option>
+                          <option value="الضرائب" data-i18n="lawServies5">
+                            Taxes
+                          </option>
+                          <option value="عقود المقاولات والانشاءات" data-i18n="lawServies6">
+                            Contracting & Construction Contracts
+                          </option>
+                          <option value="الملكية الفكرية" data-i18n="lawServies7">
+                            Mergers & Acquisitions
+                          </option>
+                          <option value="عمليات الدمج والاستحواذ" data-i18n="lawServies66">
+                            Intellectual Property
+                          </option>
+                          <option value="التقاضي" data-i18n="lawServies77">
+                            Litigation
+                          </option>
+                          <option value="الترجمة القانونية" data-i18n="lawServies8">
+                            Legal Translation
+                          </option>
+                          <option value="التحكيم التجاري الدولي" data-i18n="lawServies9">
+                            International Commercial Arbitration
+                          </option>
+                          <option value="صياغة العقود" data-i18n="lawServies10">
+                            Drafting contracts
+                          </option>
+                          <option value="حوكمة الشركات" data-i18n="lawServies11">
+                            Corporate Governance
+                          </option>
+                          <option value="قطاع الطاقة" data-i18n="lawServies12">
+                            Energy Sector
+                          </option>
+                          <option value="الخدمات العقارية" data-i18n="lawServies13">
+                            Property services
+                          </option>
+                          <option value="التمويل المصرفي" data-i18n="lawServies14">
+                            Banking Finance
+                          </option>
+                          <option value= "النزاعات العمالية" data-i18n="lawServies15">
+                            Labor disputes
+                          </option>
+                          <option value="شؤون الأجانب والخدمات القنصلية" data-i18n="lawServies16">
+                            Foreigners Affairs and Consular Services
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea required name="message"  cols="30" rows="7" class="form-control" id="message-input" data-i18n="message"
+                      ></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    {% csrf_token %}
+                    <input type="submit" id="submit-btn" data-i18n="send" class="btn btn-primary py-3 px-4 input-Law2" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endblock %}

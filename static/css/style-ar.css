@@ -1,0 +1,93 @@
+.navbar-ar {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+  .dropdown-toggle::after {
+    margin-right: 0.255em;
+  }
+  body {
+    margin: 0;
+    font-family: "Noto Sans Arabic", sans-serif !important;
+  }
+  body,
+  caption {
+    text-align: right;
+  }
+  .intro .icon {
+    margin-left: 20px;
+  }
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pl-2,
+  .px-2 {
+    padding-left: 0 !important;
+    padding-right: 0.5rem;
+  }
+  .list-inline,
+  .list-unstyled {
+    padding-right: 0;
+    list-style: none;
+  }
+  @media (min-width: 768px) {
+    .ml-md-4,
+    .mx-md-4 {
+      margin-right: 1.5rem !important;
+    }
+  }
+  .fa-paper-plane {
+    padding-right: 0 !important;
+  }
+  .appointment .form-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 15px !important;
+    right: 95%;
+    font-size: 16px;
+    transform: translateY(-50%);
+  }
+  .mr-1,
+  .mx-1 {
+    margin-left: 0.25rem;
+  }
+  .pl-3,
+  .px-3 {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  .wrap-about .pl-3,
+  .px-3 {
+    padding-right: 1rem;
+  }
+  .logo-Ar {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .wrap-about .pl-md-5,
+    .px-md-5 {
+      padding-right: 3rem !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .wrap-about .pr-md-5,
+    .px-md-5 {
+      padding-left: 3rem !important;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .ftco-navbar-light  .navbar-nav {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      padding-bottom: 0 !important;
+  
+    }
+  }
+  

@@ -1,0 +1,90 @@
+{% load static %}
+<div class="wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <p class="mb-0 phone pl-md-2">
+            <a href="https://wa.me/+201001647862" class="mr-2"
+              ><span class="fa fa-phone mr-1"></span> <span data-i18n="footerPara2">+201001647862</span></a
+            >
+            <a href="mailto:Afg.economics7@gmail.com"
+              ><span class="fa fa-paper-plane mr-1"></span>
+              Afg.economics7@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-md-end">
+          <div class="social-media">
+            <p class="mb-0 d-flex">
+              <a
+                href="https://www.facebook.com/ahmed.foad.754"
+                class="d-flex align-items-center justify-content-center"
+                ><span class="fa fa-facebook"
+                  ><i class="sr-only">Facebook</i></span
+                ></a
+              >
+              <a
+              href="https://www.youtube.com/@ahmedfoad500"
+              class="d-flex align-items-center justify-content-center"
+              ><span class="fa fa-youtube"
+                ><i class="sr-only">Facebook</i></span
+              ></a
+            >
+          
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand website-logo" href="{% url 'home' %}" >
+        <img class="logo-img logo-En" src="{% static 'images/logoEn.webp' %}" width="180px" height="60px" alt="el juhany" >
+        <img class="logo-img logo-Ar" src="{% static 'images/logoAr.webp' %}" width="180px" height="60px" alt="الجهني">    
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto navbar-ar links">
+          <li class="nav-item">
+            <a href="{% url 'home' %}" data-i18n="home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'about' %}" data-i18n="about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'services' %}" data-i18n="services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'blog' %}" data-i18n="blog" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'contact' %}" data-i18n="contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'team' %}" data-i18n="team" class="nav-link">team</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDarkDropdownMenuLink" data-i18n="lang" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              language
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li>
+                <a class="dropdown-item language" href="javascript:void(0)" id="arabic">عربي</a>
+              </li>
+              <li>
+                <a class="dropdown-item language" id="english" href="javascript:void(0)" >English</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
